@@ -530,6 +530,67 @@ footer .bottom{display:flex;justify-content:space-between;margin-top:26px;font-s
 .pv{display:block;box-sizing:border-box;padding:4px;overflow:hidden}
 .pv img{width:100%;height:100%;object-fit:cover;border-radius:36px;display:block}
 @media (max-width:760px){.pv{padding:3px}.pv img{border-radius:27px}}
+/* client showcase */
+.work{padding:140px 0 0}
+.whead{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:56px}
+.whead .lead{max-width:440px}
+.wgrid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:28px;align-items:center}
+.bframe{display:block;border-radius:20px;overflow:hidden;background:#121A45;box-shadow:0 1px 2px rgba(20,30,80,.08),0 40px 90px -34px rgba(30,40,130,.5),0 0 0 1px rgba(13,19,48,.06);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.bframe:hover{transform:translateY(-4px);box-shadow:0 1px 2px rgba(20,30,80,.08),0 50px 100px -34px rgba(30,40,130,.6),0 0 0 1px rgba(13,19,48,.06)}
+.bbar{display:flex;align-items:center;gap:12px;height:44px;padding:0 12px;background:linear-gradient(180deg,#1A2356,#121A45);border-bottom:1px solid rgba(255,255,255,.06)}
+.bnav{display:flex;gap:5px}
+.bnav i{display:block;width:14px;height:4px;border-radius:2px;background:rgba(255,255,255,.22)}
+.bnav i+i{width:9px;background:rgba(255,255,255,.14)}
+.burl{flex:1;max-width:420px;margin:0 auto;height:28px;border-radius:9px;background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;gap:7px;font-size:12.5px;font-weight:550;color:#C7CEEC;letter-spacing:.01em;white-space:nowrap;overflow:hidden}
+.burl .ico{width:12px;height:12px;color:#8FE3D6;flex:none}
+.bgo{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;color:#C7CEEC;background:rgba(255,255,255,.06)}
+.bgo .ico{width:14px;height:14px}
+.bframe picture,.bframe img{display:block;width:100%;height:auto}
+.quote{margin:0;padding:38px 36px 34px;position:relative}
+.quote .qm{display:block;font-family:var(--head);font-size:84px;line-height:.6;height:40px;font-weight:700;background:linear-gradient(135deg,#2459E8,#7C3AED);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote blockquote{margin:0;font-family:var(--head);font-size:21px;line-height:1.5;letter-spacing:-.02em;font-weight:500;color:var(--ink)}
+.quote figcaption{display:flex;align-items:center;gap:14px;margin-top:26px}
+.qav{width:48px;height:48px;border-radius:15px;flex:none;display:grid;place-items:center;font-family:var(--head);font-weight:750;font-size:17px;letter-spacing:-.03em;color:#fff;background:linear-gradient(135deg,#2459E8,#7C3AED 70%,#14B8A6);box-shadow:0 12px 26px -12px rgba(80,60,220,.7),inset 0 1px 0 rgba(255,255,255,.3)}
+.quote figcaption b{display:block;font-size:16px;color:var(--ink);font-weight:650}
+.quote figcaption small{display:block;font-size:14px;color:var(--body);margin-top:2px}
+.qtags{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.qtags span{font-size:13px;font-weight:550;color:var(--ink);padding:8px 12px;border-radius:11px;background:#fff;box-shadow:inset 0 0 0 1px rgba(13,19,48,.07);display:inline-flex;align-items:center;gap:8px}
+.qtags span i{width:8px;height:8px;border-radius:3px;display:block}
+.quote .btn{margin-top:26px;width:100%;justify-content:center}
+@media (max-width:1000px){
+  .whead{flex-direction:column;align-items:flex-start}
+  .wgrid{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .work{padding:96px 0 0}
+  .whead{margin-bottom:36px;gap:20px}
+  .bframe{border-radius:14px}
+  .bbar{height:36px;gap:8px;padding:0 8px}
+  .bnav{display:none}
+  .burl{height:24px;font-size:11.5px}
+  .bgo{width:24px;height:24px}
+  .quote{padding:30px 24px 26px}
+  .quote blockquote{font-size:18.5px}
+}
+/* live chat */
+.quick button{font:inherit;font-size:12.5px;font-weight:600;color:var(--blue);background:rgba(36,89,232,.08);padding:7px 11px;border-radius:10px;border:0;cursor:pointer;transition:background .2s}
+.quick button:hover,.quick a:hover{background:rgba(36,89,232,.14)}
+.quick button:disabled{opacity:.5;cursor:default}
+.chatp form.compose{padding:0 5px 0 4px;color:var(--ink);transition:box-shadow .2s}
+.chatp form.compose:focus-within{box-shadow:inset 0 0 0 1.5px #6E8DFF,0 0 0 4px rgba(79,123,255,.16)}
+.chatp .compose input{flex:1;min-width:0;height:100%;border:0;outline:0;background:transparent;font:inherit;font-size:14px;color:var(--ink);padding:0 8px}
+.chatp .compose input::placeholder{color:#A3A9C6}
+.chatp .compose button{margin-left:auto;width:32px;height:32px;border-radius:10px;border:0;background:var(--blue);display:grid;place-items:center;color:#fff;cursor:pointer;flex:none;transition:opacity .2s,transform .15s}
+.chatp .compose button:disabled{opacity:.45;cursor:default}
+.chatp .compose button:not(:disabled):active{transform:scale(.94)}
+.chatp .bub{white-space:pre-wrap;word-wrap:break-word;line-height:1.45}
+.chatp .bub a{color:var(--blue);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.chatp .bub.err{background:#fff;box-shadow:inset 0 0 0 1px rgba(124,58,237,.18)}
+.chatp .typing{display:flex;gap:4px;align-items:center;padding:12px 13px}
+.chatp .typing i{display:block;width:6px;height:6px;border-radius:2px;background:#9AA3CC;animation:tdot 1.1s ease-in-out infinite}
+.chatp .typing i:nth-child(2){animation-delay:.15s}.chatp .typing i:nth-child(3){animation-delay:.3s}
+@keyframes tdot{0%,60%,100%{opacity:.35;transform:none}30%{opacity:1;transform:translateY(-3px)}}
+@media (max-width:720px){.chatp .compose input{font-size:16px}.chatp .msgs{max-height:min(380px,calc(100vh - 330px))}}
 </style>
 </head>
 <body>
@@ -556,6 +617,7 @@ footer .bottom{display:flex;justify-content:space-between;margin-top:26px;font-s
     <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
     <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
     <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
     <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
   </defs>
 </svg>
@@ -564,7 +626,7 @@ footer .bottom{display:flex;justify-content:space-between;margin-top:26px;font-s
   <div class="in">
     <a href="#top" class="logo" aria-label="Amuze home">amuze<b>.</b></a>
     <nav class="links" aria-label="Primary">
-      <a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#about">About</a><a href="#faq">FAQ</a>
+      <a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#work">Our work</a><a href="#about">About</a><a href="#faq">FAQ</a>
     </nav>
     <a href="#preview" class="btn btn-p">Get a free preview</a>
   </div>
@@ -847,6 +909,29 @@ footer .bottom{display:flex;justify-content:space-between;margin-top:26px;font-s
 </section>
 
 <div class="lgroup light grain" data-nav="light"><div class="lf"><i class="a"></i><i class="b"></i><i class="c"></i></div>
+<section class="work sec" id="work">
+  <div class="wrap">
+    <div class="whead">
+      <div class="rv"><div class="kick"><i></i>Real client</div><h2 class="big">Sonoma Adventures.<br><span class="gt">Live and answering.</span></h2></div>
+      <p class="lead rv d1">Wine country bike tours in Sonoma, run by Hunt and Yuni Bailie. Their new site has an assistant that knows their tours, so guests get answers even while the team is out riding.</p>
+    </div>
+    <div class="wgrid">
+      <a class="bframe rv" href="https://sonoma-adventures.grok.me" target="_blank" rel="noopener" aria-label="Visit the Sonoma Adventures website (opens in a new tab)">
+        <div class="bbar"><span class="bnav"><i></i><i></i></span><span class="burl"><svg class="ico"><use href="#i-lock"/></svg>sonoma-adventures.grok.me</span><span class="bgo"><svg class="ico"><use href="#i-ext"/></svg></span></div>
+        <picture><source srcset="sonoma-adventures.webp" type="image/webp"><img src="sonoma-adventures.jpg" alt="The Sonoma Adventures homepage: Sonoma Valley bike and e-bike tours" width="1600" height="1000" loading="lazy" decoding="async"></picture>
+      </a>
+      <!-- Testimonial pending Hunt's confirmation -->
+      <figure class="quote lglass rv d1">
+        <span class="qm" aria-hidden="true">&ldquo;</span>
+        <blockquote>Peter has built every website we've had, and this one is on another level. The assistant answers guests' questions about our tours while we're out riding, and when I want something changed I just text him.</blockquote>
+        <figcaption><span class="qav">HB</span><span><b>Hunt Bailie</b><small>Co-owner, Sonoma Adventures</small></span></figcaption>
+        <div class="qtags"><span><i style="background:#2459E8"></i>Wine country bike tours</span><span><i style="background:#7C3AED"></i>Site + AI assistant</span></div>
+        <a class="btn btn-p" href="https://sonoma-adventures.grok.me" target="_blank" rel="noopener">Visit the site <svg class="ico arr"><use href="#i-ext"/></svg></a>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <section class="about sec" id="about">
   <div class="wrap">
     <div class="card2 lglass rv">
@@ -924,17 +1009,15 @@ footer .bottom{display:flex;justify-content:space-between;margin-top:26px;font-s
 </main>
 
 <button class="chatbtn" id="chatbtn" aria-expanded="false" aria-controls="chatp"><span class="gav">a</span><span class="lbl">Ask amuze</span></button>
-<div class="chatp" id="chatp" role="dialog" aria-label="Ask amuze demo chat">
-  <div class="hd"><span class="gav" style="width:36px;height:36px">a</span><div><b>Ask amuze</b><small><i></i>Grok · usually replies in seconds</small></div><button class="x" id="chatx" aria-label="Close chat"><svg class="ico" style="width:16px;height:16px"><use href="#i-x"/></svg></button></div>
-  <div class="msgs" id="cmsgs">
-    <span class="day">Demo conversation</span>
-    <div class="bub me">How much does this cost?</div>
-    <div class="bub ai">$500 to set up, then $100/mo. That covers hosting, your assistant and ongoing updates. No contract.</div>
-    <div class="bub me">Do I have to learn anything?</div>
-    <div class="bub ai">Nope. Peter builds it and runs it. Want a change? Just text him. Want to see a free preview of your site?</div>
+<div class="chatp" id="chatp" role="dialog" aria-label="Ask amuze chat">
+  <div class="hd"><span class="gav" style="width:36px;height:36px">a</span><div><b>Ask amuze</b><small><i></i>Built on Grok · replies in seconds</small></div><button class="x" id="chatx" aria-label="Close chat"><svg class="ico" style="width:16px;height:16px"><use href="#i-x"/></svg></button></div>
+  <div class="msgs" id="cmsgs" aria-live="polite">
+    <span class="day">Today</span>
+    <div class="bub ai">Hi! I'm the Amuze assistant :) Ask me anything about getting a website with its own AI assistant, pricing, or how it all works.</div>
   </div>
-  <div class="quick"><a href="#preview" data-close>Get a free preview</a><a href="#how" data-close>How it works</a></div>
-  <div class="compose">This is a demo preview<span><svg class="ico" style="width:14px;height:14px"><use href="#i-send"/></svg></span></div>
+  <div class="quick" id="cquick"><button type="button" data-q="How much does it cost?">How much does it cost?</button><button type="button" data-q="How does the free preview work?">How does the free preview work?</button><button type="button" data-q="Do I have to learn any AI tools?">Do I have to learn anything?</button></div>
+  <form class="compose" id="cform" autocomplete="off"><input id="cin" name="q" maxlength="600" placeholder="Ask anything…" aria-label="Your message"><button type="submit" id="csend" aria-label="Send"><svg class="ico" style="width:14px;height:14px"><use href="#i-send"/></svg></button></form>
+</div>
 </div>
 <script>
 (function(){
@@ -993,11 +1076,41 @@ footer .bottom{display:flex;justify-content:space-between;margin-top:26px;font-s
   }
 
   var cb=d.getElementById('chatbtn'), cp=d.getElementById('chatp'), cx=d.getElementById('chatx'), shown=false;
+  var cm=d.getElementById('cmsgs'), cf=d.getElementById('cform'), ci=d.getElementById('cin'), cs=d.getElementById('csend'), cq=d.getElementById('cquick');
+  var CHAT_URL='https://modest-lemming-735.convex.site/chat', hist=[], busy=false, sid;
+  try{sid=sessionStorage.getItem('amz_sid');if(!sid){sid='s'+Date.now().toString(36)+Math.random().toString(36).slice(2,10);sessionStorage.setItem('amz_sid',sid)}}catch(e){sid='s'+Date.now().toString(36)+Math.random().toString(36).slice(2,10)}
   function openChat(o){cp.classList.toggle('open',o);cb.setAttribute('aria-expanded',o);
-    if(o&&!shown){shown=true;[].forEach.call(cp.querySelectorAll('.bub'),function(el,i){setTimeout(function(){el.classList.add('sh')},reduce?0:250+i*650)})}}
+    if(o&&!shown){shown=true;[].forEach.call(cm.querySelectorAll('.bub'),function(el,i){setTimeout(function(){el.classList.add('sh')},reduce?0:250+i*650)})}
+    if(o&&!busy&&matchMedia('(hover:hover)').matches)setTimeout(function(){ci.focus({preventScroll:true})},380)}
   cb.addEventListener('click',function(){openChat(!cp.classList.contains('open'))});
   cx.addEventListener('click',function(){openChat(false)});
+  function esc(t){return t.replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+  function fmt(t){return esc(t).replace(/\*\*(.+?)\*\*/g,'$1').replace(/peter@amuze\.it/g,'<a href="mailto:peter@amuze.it">peter@amuze.it</a>').replace(/((?:free )?preview form)/i,'<a href="#preview" data-close>$1</a>')}
+  function bub(cls,html){var b=d.createElement('div');b.className='bub '+cls;b.innerHTML=html;cm.appendChild(b);
+    [].forEach.call(b.querySelectorAll('[data-close]'),function(a){a.addEventListener('click',function(){openChat(false)})});
+    requestAnimationFrame(function(){requestAnimationFrame(function(){b.classList.add('sh')})});cm.scrollTop=cm.scrollHeight;return b}
+  function setBusy(v){busy=v;cs.disabled=v;ci.disabled=v;[].forEach.call(cq.querySelectorAll('button'),function(x){x.disabled=v})}
+  var FAIL="Sorry, I can't answer right this second. You can email Peter at peter@amuze.it or use the free preview form below, and he'll get back to you :)";
+  function send(text){text=(text||'').trim().slice(0,600);if(!text||busy)return;
+    bub('me',esc(text));hist.push({role:'user',content:text});hist=hist.slice(-20);ci.value='';
+    if(cq.querySelector('button')){cq.innerHTML='<a href="#preview" data-close>Get a free preview</a><a href="#how" data-close>How it works</a>';
+      [].forEach.call(cq.querySelectorAll('[data-close]'),function(a){a.addEventListener('click',function(){openChat(false)})})}
+    setBusy(true);var ty=bub('ai typing','<i></i><i></i><i></i>');
+    var ctl=('AbortController' in window)?new AbortController():null, to=setTimeout(function(){ctl&&ctl.abort()},30000);
+    fetch(CHAT_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sid,page:location.href.slice(0,300),messages:hist}),signal:ctl?ctl.signal:undefined})
+      .then(function(r){return r.json().catch(function(){return {}}).then(function(j){return {ok:r.ok,status:r.status,j:j}})})
+      .then(function(res){
+        if(res.ok&&res.j&&res.j.reply){hist.push({role:'assistant',content:res.j.reply});return res.j.reply}
+        if(res.status===429)throw {msg:"You've sent quite a few messages, so let's take a short breather. For anything else, email Peter at peter@amuze.it :)"};
+        if(res.status===413)throw {msg:"That one's a bit long for me. Could you shorten it? Or email Peter at peter@amuze.it."};
+        throw {msg:FAIL}})
+      .then(function(reply){ty.remove();bub('ai',fmt(reply))},function(e){ty.remove();bub('ai err',fmt((e&&e.msg)||FAIL))})
+      .then(function(){clearTimeout(to);setBusy(false);if(cp.classList.contains('open')&&matchMedia('(hover:hover)').matches)ci.focus({preventScroll:true})});
+  }
+  cf.addEventListener('submit',function(e){e.preventDefault();send(ci.value)});
+  cq.addEventListener('click',function(e){var b=e.target.closest('button[data-q]');if(b)send(b.getAttribute('data-q'))});
   [].forEach.call(cp.querySelectorAll('[data-close]'),function(a){a.addEventListener('click',function(){openChat(false)})});
+  addEventListener('keydown',function(e){if(e.key==='Escape'&&cp.classList.contains('open'))openChat(false)});
   if(/[?&]chat=1/.test(location.search)) openChat(true);
 
   var f=d.getElementById('pf'); f.addEventListener('submit',function(e){e.preventDefault();
