@@ -381,7 +381,7 @@ h2.big{font-size:clamp(40px,5.4vw,76px);letter-spacing:-.05em}
 .thread .rd{align-self:flex-end;display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#7EE8D6}
 /* about */
 .about .card2{display:grid;grid-template-columns:auto 1fr;gap:56px;padding:56px;align-items:start;max-width:1040px;margin:0 auto}
-.pv{width:132px;height:132px;border-radius:36px;display:grid;place-items:center;font-family:var(--head);font-weight:750;font-size:50px;letter-spacing:-.05em;color:#fff;background:linear-gradient(135deg,#2459E8,#7C3AED 60%,#14B8A6);box-shadow:0 24px 50px -20px rgba(80,60,220,.6),inset 0 1px 0 rgba(255,255,255,.3)}
+.pv{width:168px;height:168px;border-radius:40px;padding:4px;overflow:hidden;display:grid;place-items:center;font-family:var(--head);font-weight:750;font-size:50px;letter-spacing:-.05em;color:#fff;background:linear-gradient(135deg,#2459E8,#7C3AED 60%,#14B8A6);box-shadow:0 24px 50px -20px rgba(80,60,220,.6),inset 0 1px 0 rgba(255,255,255,.3)}
 .about h2{font-size:clamp(36px,4.2vw,56px)}
 .about p{font-size:18.5px;line-height:1.7;margin-top:18px;color:var(--body);max-width:640px}
 .sig{font-family:var(--head);font-size:24px;font-weight:600;color:var(--ink);margin-top:20px;letter-spacing:-.03em}
@@ -510,7 +510,7 @@ footer .bottom{display:flex;justify-content:space-between;margin-top:26px;font-s
   .pl,.pr{padding:34px 26px}
   .price b{font-size:72px}
   .about .card2{grid-template-columns:1fr;padding:34px 26px;gap:26px}
-  .pv{width:96px;height:96px;border-radius:28px;font-size:38px}
+  .pv{width:120px;height:120px;border-radius:30px;font-size:38px}
   .faq{padding:0 0 110px}
   details summary{font-size:17.5px;padding:20px}
   details p{padding:0 20px 20px}
@@ -527,6 +527,9 @@ footer .bottom{display:flex;justify-content:space-between;margin-top:26px;font-s
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .js .rv{opacity:1;transform:none}
 }
+.pv{display:block;box-sizing:border-box;padding:4px;overflow:hidden}
+.pv img{width:100%;height:100%;object-fit:cover;border-radius:36px;display:block}
+@media (max-width:760px){.pv{padding:3px}.pv img{border-radius:27px}}
 </style>
 </head>
 <body>
@@ -847,7 +850,7 @@ footer .bottom{display:flex;justify-content:space-between;margin-top:26px;font-s
 <section class="about sec" id="about">
   <div class="wrap">
     <div class="card2 lglass rv">
-      <div class="pv">PV</div>
+      <div class="pv"><img src="peter.jpg" alt="Peter, founder of Amuze" width="168" height="168" loading="lazy"></div>
       <div>
         <div class="kick"><i></i>About</div>
         <h2>Hi, I'm Peter.<br><span class="gt">I'm the human part.</span></h2>
